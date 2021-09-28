@@ -15,7 +15,7 @@ namespace SimpleSite
 
             routes.MapRoute(
                 name: "Default",
-                url: "{app}/{controller}/{action}/{id}",
+                url: "{controller}/{action}/{id}",
                 defaults: new { app = "site" ,controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }

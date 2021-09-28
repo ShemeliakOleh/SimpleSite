@@ -17,7 +17,7 @@ namespace SimpleSite
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "site/api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
             config.Formatters.JsonFormatter.SupportedMediaTypes
